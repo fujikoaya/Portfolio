@@ -60,26 +60,6 @@ body {
   padding-left: 30px;
 }
 
-.header .inner ul li {
-  font-family: "Special Elite", cursive;
-  font-size: 30px;
-  position: relative;
-}
-.header .inner ul li:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 1px;
-  width: 70%;
-  height: 2px;
-  background: black;
-  transform: scale(0, 1);
-  transition: 0.4s;
-}
-.header .inner ul li:hover:before {
-  transform: scale(1);
-}
-
 .aboutpro {
   display: flex;
 }
@@ -148,11 +128,14 @@ h2:before {
 .worked {
   flex-basis: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: stretch;
 }
 .worked img {
   width: 30%;
   height: 200px;
+  margin-bottom: 15px;
 }
 
 .contact form {
