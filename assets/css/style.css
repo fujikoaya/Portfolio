@@ -1,0 +1,178 @@
+body {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
+#top {
+  padding-top: 150px;
+}
+#top ul {
+  display: flex;
+  justify-content: end;
+}
+#top ul li {
+  color: #d0b8b8;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  padding-left: 25px;
+  position: relative;
+}
+#top ul li:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 80%;
+  height: 3px;
+  background: #ac9b9b;
+  transform: scale(0, 1);
+  transition: 0.4s;
+}
+#top ul li:hover:before {
+  transform: scale(1);
+}
+#top .mainvisual .main-title h1 {
+  color: #ac9b9b;
+  font-size: 120px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  text-indent: -5em;
+  padding-left: 3em;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headers .header-left img {
+  width: 200px;
+}
+.headers .header-right ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+}
+.headers .header-right ul li {
+  padding-left: 30px;
+}
+
+.header .inner ul li {
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  position: relative;
+}
+.header .inner ul li:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: 70%;
+  height: 2px;
+  background: black;
+  transform: scale(0, 1);
+  transition: 0.4s;
+}
+.header .inner ul li:hover:before {
+  transform: scale(1);
+}
+
+.aboutpro {
+  display: flex;
+}
+
+.aboutme .myselfed {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.pic {
+  margin-right: 150px;
+  max-width: 300px;
+}
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.myself {
+  padding-bottom: 5px;
+}
+.myself .myselfed {
+  text-align: center;
+}
+
+h2 {
+  max-width: 500px;
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 8%;
+  height: 2px;
+  background: black;
+}
+
+.skills {
+  padding-bottom: 15px;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill .skilled {
+  display: flex;
+  justify-content: space-between;
+}
+.skill .skilled p {
+  padding-right: 10px;
+}
+
+.worked {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.worked img {
+  width: 30%;
+  height: 200px;
+}
+
+.contact form {
+  width: 500px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.contact form .submitBtn {
+  width: 150px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */
