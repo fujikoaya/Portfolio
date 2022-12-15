@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 1025px;
   margin: 0 auto;
@@ -130,13 +131,36 @@ h2:before {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.work .worked a {
+.work .worked .modal {
   flex-basis: 32%;
+}
+.work .worked .modal h3 {
+  text-align: center;
+}
+.work .worked .modal h4 {
+  font-size: 18px;
+  color: #606061;
+  font-weight: bold;
+}
+.work .worked .modal h5 {
+  font-size: 18px;
+  color: #606061;
+  font-weight: bold;
+}
+.work .worked .modal p {
+  font-size: 14px;
+  color: #606061;
 }
 .work .worked img {
   width: 100%;
-  height: 200px;
-  margin-bottom: 15px;
+  height: 195px;
+  transition: transform 0.6s ease;
+  /* ゆっくり変化させる */
+  border: 1px solid gray;
+}
+.work .worked .modal:hover img {
+  transform: scale(1.1);
+  /* 拡大 */
 }
 
 .modalDialog {
@@ -153,6 +177,14 @@ h2:before {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
+}
+.modalDialog a {
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1.5px solid black;
+}
+.modalDialog a:hover {
+  opacity: 0.5;
 }
 
 .modalDialog:target {
@@ -204,10 +236,17 @@ h2:before {
   border: 1px solid black;
   border-radius: 10px;
   padding: 5px;
+  transition: transform 0.6s ease;
 }
 .contact form .submitBtn {
   width: 150px;
   text-align: center;
+}
+.contact form .submitBtn:hover {
+  transform: scale(1.1);
+  background: rgb(200, 200, 200);
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
 }
 
 footer {
