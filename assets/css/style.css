@@ -88,8 +88,8 @@ body {
 .myself {
   padding-bottom: 5px;
 }
-.myself .myselfed {
-  text-align: center;
+.myself .ex {
+  margin-left: 50px;
 }
 
 h2 {
