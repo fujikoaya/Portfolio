@@ -65,6 +65,9 @@ body {
   display: flex;
 }
 
+.aboutme {
+  width: 60%;
+}
 .aboutme .myselfed {
   display: flex;
   padding-bottom: 10px;
@@ -90,6 +93,10 @@ body {
 }
 .myself .ex {
   margin-left: 50px;
+}
+
+.pr {
+  margin-bottom: 100px;
 }
 
 h2 {
