@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  max-width: 1025px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@ body {
   align-items: center;
 }
 .headers .header-left img {
-  width: 200px;
+  width: 175px;
 }
 .headers .header-right ul {
   display: flex;
@@ -71,11 +71,6 @@ body {
 .aboutme .myselfed {
   display: flex;
   padding-bottom: 10px;
-}
-
-.profile {
-  display: flex;
-  justify-content: center;
 }
 
 .pic {
@@ -122,12 +117,8 @@ h2:before {
 
 .skill {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.skill .skilled {
-  display: flex;
-  justify-content: space-between;
 }
 .skill .skilled p {
   padding-right: 10px;
@@ -164,6 +155,7 @@ h2:before {
   transition: transform 0.6s ease;
   /* ゆっくり変化させる */
   border: 1px solid gray;
+  margin: 10px 0;
 }
 .work .worked .modal:hover img {
   transform: scale(1.1);
@@ -260,4 +252,66 @@ footer {
   text-align: center;
   font-family: "Dancing Script", cursive;
   color: gray;
+}
+
+@media screen and (max-width: 767px) {
+  #top {
+    padding-top: 100px;
+  }
+  #top ul {
+    justify-content: center;
+  }
+  #top .mainvisual .main-title h1 {
+    text-indent: 0;
+    padding-left: 0;
+  }
+  .headers {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .headers .header-left {
+    text-align: center;
+  }
+  .headers .header-right ul {
+    justify-content: center;
+  }
+  #about {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aboutpro {
+    display: block;
+  }
+  .aboutpro .pic {
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+  .aboutpro .aboutme {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .aboutpro .myself,
+.aboutpro .aboutpr {
+    margin-top: 50px;
+  }
+  .aboutpro .ex {
+    width: 62%;
+  }
+  #works {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #works .worked {
+    display: block;
+  }
+  #works .worked img {
+    height: auto;
+  }
+  #works .modal {
+    margin-bottom: 50px;
+  }
+  .contact {
+    width: 65%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

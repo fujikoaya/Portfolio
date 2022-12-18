@@ -1,5 +1,5 @@
 body {
-    max-width: 1025px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ body {
 
     .header-left {
         img {
-            width: 200px;
+            width: 175px;
 
         }
     }
@@ -81,35 +81,35 @@ body {
     }
 }
 
-.header {
+// .header {
 
-    // .inner {
-    //     ul {
-    //         li {
-    //             font-family: 'Special Elite', cursive;
-    //             font-size: 30px;
-    //             position: relative;
-    //         }
+// .inner {
+//     ul {
+//         li {
+//             font-family: 'Special Elite', cursive;
+//             font-size: 30px;
+//             position: relative;
+//         }
 
-    //         li:before {
-    //             content: "";
-    //             position: absolute;
-    //             right: 0;
-    //             bottom: 1px;
-    //             width: 70%;
-    //             height: 2px;
-    //             background: black;
-    //             transform: scale(0, 1);
-    //             transition: 0.4s;
-    //         }
+//         li:before {
+//             content: "";
+//             position: absolute;
+//             right: 0;
+//             bottom: 1px;
+//             width: 70%;
+//             height: 2px;
+//             background: black;
+//             transform: scale(0, 1);
+//             transition: 0.4s;
+//         }
 
-    //         li:hover:before {
-    //             transform: scale(1);
-    //         }
-    //     }
-    // }
+//         li:hover:before {
+//             transform: scale(1);
+//         }
+//     }
+// }
 
-}
+// }
 
 // ここからabout
 .aboutpro {
@@ -118,16 +118,11 @@ body {
 
 .aboutme {
     width: 60%;
+
     .myselfed {
         display: flex;
         padding-bottom: 10px;
     }
-
-}
-
-.profile {
-    display: flex;
-    justify-content: center;
 
 }
 
@@ -144,12 +139,14 @@ body {
 
 .myself {
     padding-bottom: 5px;
-    .ex{
+
+    .ex {
         margin-left: 50px;
     }
-    
+
 }
-.pr{
+
+.pr {
     margin-bottom: 100px;
 }
 
@@ -176,12 +173,12 @@ h2:before {
 
 .skill {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     .skilled {
-        display: flex;
-        justify-content: space-between;
+        // // display: flex;
+        // justify-content: space-between;
+
         p {
             padding-right: 10px;
         }
@@ -206,6 +203,7 @@ h2:before {
                 color: #606061;
                 font-weight: bold;
             }
+
             h5 {
                 font-size: 18px;
                 color: #606061;
@@ -224,6 +222,7 @@ h2:before {
             transition: transform .6s ease;
             /* ゆっくり変化させる */
             border: 1px solid gray;
+            margin: 10px 0;
         }
 
         .modal:hover img {
@@ -253,12 +252,13 @@ h2:before {
         font-weight: bold;
         font-size: 13px;
         border-bottom: 1.5px solid black;
+
         &:hover {
             opacity: 0.5;
         }
     }
 
-    
+
 }
 
 .modalDialog:target {
@@ -320,8 +320,9 @@ h2:before {
         .submitBtn {
             width: 150px;
             text-align: center;
+
             // margin: 0 auto;
-            &:hover{
+            &:hover {
                 transform: scale(1.1);
                 background: rgb(200, 200, 200);
                 border-radius: 10px;
@@ -337,4 +338,76 @@ footer {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: gray;
+}
+
+@media screen and(max-width:767px) {
+    #top {
+        padding-top: 100px;
+
+        ul {
+            justify-content: center;
+        }
+
+        .mainvisual {
+            .main-title{
+                h1{
+                    text-indent: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .headers{
+        display: block;
+        margin-bottom: 50px;
+        .header-left{
+            text-align: center;
+        }
+        .header-right{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+    #about{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .aboutpro{
+        display: block;
+        .pic{
+            margin-right: 0px;
+            margin: 0 auto;
+        }
+        .aboutme{
+           width: 80%;
+            margin: 0 auto;
+        }
+        .myself,
+        .aboutpr{
+            margin-top: 50px;
+        }
+        .ex{
+            width: 62%;
+        }
+    }
+    #works{
+        width: 80%;
+        margin: 0 auto;
+        .skilled{
+        }
+        .worked{
+            display: block;
+            img{
+                height: auto;
+            }
+        }
+        .modal{
+            margin-bottom: 50px;
+        }
+    }
+    .contact{
+        width: 65%;
+        margin: 0 auto;
+    }
 }
