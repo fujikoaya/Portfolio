@@ -415,6 +415,9 @@ footer {
   }
 }
 @media screen and (max-width: 375px) {
+  #top ul li:before {
+    background: #fff;
+  }
   #top .mainvisual .main-title h1 {
     font-size: 80px;
   }
@@ -555,5 +558,8 @@ footer {
   }
   #page-top {
     bottom: 90px;
+  }
+  .headers .header-right ul li::after {
+    border-bottom: solid 2px #fff;
   }
 }/*# sourceMappingURL=style.css.map */

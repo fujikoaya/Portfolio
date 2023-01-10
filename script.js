@@ -1,17 +1,15 @@
-$(function () {
-  // 
-
-
+$(function(){
   $('.hamburger').on('click', function () {
 
     $(this).toggleClass('is-active');
     $('#nav-list').toggleClass('is-active');
-  })
+  });
 });
-bubbly({
-  colorStart: '#fff4e6',
-  colorStop: '#ffe9e4',
-  blur: 1,
-  compose: 'source-over',
-  bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
-});
+
+ bubbly({
+   colorStart: '#fff4e6',
+   colorStop: '#ffe9e4',
+   blur: 1,
+   compose: 'source-over',
+   bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+ });
