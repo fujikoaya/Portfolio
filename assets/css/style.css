@@ -414,12 +414,13 @@ footer {
     box-shadow: var(--color) 0px 0px 0px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   #top ul li:before {
     background: #fff;
   }
   #top .mainvisual .main-title h1 {
-    font-size: 80px;
+    font-size: 70px;
+    margin-top: 100px;
   }
   #about {
     width: 100%;
