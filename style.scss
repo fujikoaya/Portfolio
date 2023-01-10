@@ -696,7 +696,7 @@ footer {
     // 3本線をバッテンにする
     .hamburger.is-active span:nth-child(1) {
         top: 22px;
-        right: -265px;
+        right: -282px;
         transform: translateY(6px) rotate(-45deg);
         width: 50%;
     }
@@ -707,7 +707,7 @@ footer {
 
     .hamburger.is-active span:nth-child(3) {
         top: 34px;
-        right: -265px;
+        right: -282px;
         transform: translateY(-6px) rotate(45deg);
         width: 50%;
     }
