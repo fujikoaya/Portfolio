@@ -414,7 +414,7 @@ footer {
     box-shadow: var(--color) 0px 0px 0px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
   #top ul li:before {
     background: #fff;
   }
@@ -430,6 +430,7 @@ footer {
   }
   #about h2 {
     text-align: center;
+    font-size: 43px;
   }
   #about h2:before {
     height: 0;
@@ -449,15 +450,18 @@ footer {
   }
   #works h2 {
     text-align: center;
+    font-size: 43px;
   }
   #works h2:before {
     height: 0;
   }
   .contact {
     margin-bottom: 50px;
+    width: 62%;
   }
   .contact h2 {
     text-align: center;
+    font-size: 43px;
   }
   .contact h2:before {
     height: 0;
@@ -467,7 +471,7 @@ footer {
   }
   .contact form input,
 .contact form textarea {
-    width: 100%;
+    width: 120%;
   }
   #top {
     padding-top: 50px;
@@ -486,7 +490,7 @@ footer {
     background-color: gray;
     position: absolute;
     top: -100%;
-    right: -476%;
+    right: -600%;
     transform: translate(-50%, -50%);
   }
   .hamburger span:nth-child(1) {
