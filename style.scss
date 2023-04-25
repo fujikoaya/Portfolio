@@ -158,21 +158,33 @@ h2:before {
 }
 
 // ここからwork
-.skills {
+#skills {
     padding-bottom: 15px;
 }
 
 .skill {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
 
     .skilled {
         // // display: flex;
         // justify-content: space-between;
 
         p {
-            padding-right: 10px;
+            padding-right: 20px;
+        }
+    }
+    .skillimg{
+        img{
+            width: 100px;
+            height: auto;
+        }
+    }
+    .skillimg-a{
+        img{
+            width: 100px;
+            height: auto;
         }
     }
 }
